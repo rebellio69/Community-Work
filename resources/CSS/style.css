@@ -48,6 +48,7 @@ html {
 }
 .container {
 	font-family: 'Ubuntu', sans-serif;
+  background-color: #e0e0d1;
 }
 h1, h2, p {
   text-align: center;
@@ -122,7 +123,6 @@ span a:hover {
   font-size: 1.5rem;
   color: #3a3a3a;
   background-color: #1a7b90;
-  border: 1.5px solid #3a3a3a;
   cursor: pointer;
   margin-top: 2rem;
   padding: 1.5rem;
@@ -241,6 +241,11 @@ span a:hover {
   background-color: #3e8e41;
   transform: scale(1.02);
   box-shadow: 0px 10px 8px rgba(0,0,0,0.5);
+}
+i {
+  position: absolute;
+  left: 45%;
+  top: 45%;
 }
 
 /*Quick Links Section*/
