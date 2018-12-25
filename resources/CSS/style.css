@@ -133,25 +133,76 @@ span a:hover {
   color: #f4f4f4;
 }
 
-/*Centre and Agency Section*/
-.process {
-  display: flex;
-  padding: 1rem 1rem 0rem 1rem;
+/*Grid Container*/
+.grid {
+  display: grid;
+  height: 120vh;
+  grid-template: 35vh 25vh 25vh 10vh 10vh / repeat(12, 1fr);
+  padding: 1rem;
+  border: 2px solid red;
 }
-.centre, .agency {
-  width: 50%;
-  margin: 1rem;
+
+/*Centre and Agency Grid*/
+.centre {
+  grid-column: 1 / span 6;
+  margin: 1rem 0.5rem 1.5rem 0.5rem;
 }
+.agency {
+  grid-column: 7 / span 6;
+  margin: 1rem 0.5rem 1.5rem 0.5rem;;
+}
+
+/*Information Grid*/
+.WLS {
+  grid-column: 1 / span 4;
+}
+.NC {
+  grid-column: 5 / span 4;
+}
+.hours {
+  grid-column: 9 / span 4;
+}
+.communication {
+  grid-column: 1 / span 4;
+}
+.risk {
+  grid-column: 5 / span 4;
+}
+.safety {
+  grid-column: 9 / span 4;
+}
+
+/*Qucik Links Grid*/
+.MH {
+  grid-column: 1 / span 4;
+  grid-row: 4 / span 2;
+}
+.AD {
+  grid-column: 5 / span 4;
+  grid-row: 4 / span 2;
+}
+.maps {
+  grid-column: 9 / span 2;
+}
+.address {
+  grid-column: 11 / span 2;
+}
+.EM {
+  grid-column: 9 / span 2;
+}
+.cobra {
+  grid-column: 11 / span 2;
+}
+
+/*Centre and Agency Dropdown*/
 .dropdown {
   position: relative;
   display: inline-block;
-  height: 12rem;
-  margin-bottom: 1rem;
 }
 .dropdown .dropbtn {
   background-color: #89357c;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
   width: 100%;
   height: 100%;
@@ -164,10 +215,10 @@ span a:hover {
 .dropdown .links {
   display: none;
   position: absolute;
-  top: -1rem;
-  left: 50%;
+  top: 0;
+  left: 52%;
   background-color: #c9b6c6;
-  width: 50%;
+  width: 48%;
   height: 100%;
   z-index: 1;
 }
@@ -186,21 +237,16 @@ span a:hover {
   font-size: 1.2rem;
 }
 
-/*Information Section*/
-.information {
-  display: flex;
-  flex-direction: column;
-}
-.top-section, .bottom-section {
-  display: flex;
-  height: 12rem;
-  padding: 0 1rem;
-}
+/*Information Section Dropdown*/
 .card {
   position: relative;
   display: inline-block;
-  padding: 1rem 1rem 0.25rem 1rem;
-  width: 33.33%;
+}
+.WLS.card, .NC.card, .hours.card {
+  margin: 0.5rem;
+}
+.communication.card, .risk.card, .safety.card {
+  margin: 0.5rem;
 }
 .card .dropbtn {
   display: flex;
@@ -253,24 +299,17 @@ i {
   padding-top: 1.5rem;
 }
 
-/*Quick Links Section*/
-.quick-links {
-  display: flex;
-}
-.quick-links .button {
-  width: 25%;
-  height: 100%;
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 1.5rem;
+/*Quick Links Buttons*/
+.ql {
   color: white;
   background-color: #5f9637;
-  opacity: 0.8;
-  margin: 1.75rem 2rem;
 }
-.quick-links .button:hover {
-  transform: scale(1.02);
-  opacity: 1;
-  font-weight: bold;
-  box-shadow: 0px 10px 8px rgba(0,0,0,0.5);
+.maps, .address {
+  margin: 1.5rem 0.5rem 0.25rem 0.5rem;
+}
+.EM, .cobra {
+  margin: 0.25rem 0.5rem 1.5rem 0.5rem;
+}
+.MH, .AD {
+  margin: 1.5rem 0.5rem 1.5rem 0.5rem;
 }
