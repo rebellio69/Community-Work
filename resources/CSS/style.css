@@ -294,7 +294,7 @@ nav input[type=text]:hover {
   top: 3.2rem;
   left: 37%;
   width: 26%;
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
   z-index: 1;
 }
 .card:hover .list {
@@ -355,29 +355,30 @@ nav input[type=text]:hover {
   padding: 1.5rem;
 }
 
-.AD, .MH {
+.AD {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: auto;
-  background-color: white;
-  overflow: hidden;
-  border: 1px solid green;
   margin: 1.5rem 0.5rem 1.5rem 0.5rem;
-  transform: all 1s ease 1s;
   transition: all 0.3s ease-in-out 0.1s;
 }
+
+.MH  {
+  margin: 1.5rem 0.5rem 1.5rem 0.5rem;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+.MH img {
+  width: 100%;
+  height:100%;
+  overflow: hidden;
+}
 .AD img {
-  width: 40%;
+  width: 50%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
 }
-.MH img {
-  width: 90%;
-}
 
 .AD:hover, .MH:hover {
+  font-weight: bold;
   transform: scale(1.01);
   box-shadow: 6px 6px 2px rgba(0,0,0,0.5);
 }
